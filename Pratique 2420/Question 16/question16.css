@@ -1,0 +1,7 @@
+#p1 {
+   display: none;
+ }
+ 
+ #p1.visible {
+   display: block;
+ }

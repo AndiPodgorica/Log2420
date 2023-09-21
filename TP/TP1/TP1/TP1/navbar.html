@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <title>Accueil(TP)</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="icon" href="https://d1h0x9w88ijkiq.cloudfront.net/3705/images/favicon_play.ico" crossorigin="anonymous">
+    
+    <meta charset="utf-8">
+    <meta name ="viewport" content ="width=device-width, intial-scale = 1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c8377ed47d.js" crossorigin="anonymous"></script>
+   
+  </head>
+
+
+  <!--Modal membre-->
+  <div id="myModal" class="modal" data-backdrop="static" data-keyboard="false">
+    <div class = "container-fluid">
+   
+      <div class="modalContent col-3" data-backdrop="static" data-keyboard="false">
+      <div class = "row">
+        <div class = " accesEspace d-flex col-12 justify-content-center">
+          <div class="">Accès à l'espace membre</div>
+        </div>
+      </div>
+        <div class = "row mt-3 ml-1">
+          <div class ="col-1"></div>
+          <div class = "d-flex col-12 align-self-start">Nom Utilisateur</div>
+          <input class = "modalInput inputStyle mt-2 col-11" style="height: 50px;" type="text" size="40"  name="texteInscription" required>
+        </div>
+        <div class = "row mt-5 ml-1">
+          <div class ="col-1"></div>
+          <div class = "d-flex col-12 align-self-start" id="motDePasse">Mot de passe <p class = "errorMessage" id="error"></p> </div>
+          <input class = "modalInput inputStyle mt-2 col-11" style="height: 50px;" type="text" size="40"  name="texteInscription" required>
+        </div>
+        <div class ="row justify-content-end mt-3">
+          <button class = "buttonAnnuler mr-3" onclick="closeOnClick()">Annuler</button>
+          <button class = "buttonConnecter mr-3" id = "buttonConnecter" onclick ="btnConnecter()">Connecter</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+
+<!--Modal Confirmation Inscription-->
+
+<div id="modalInscription" class="modal" data-backdrop="static" data-keyboard="false">
+    <div class = "container-fluid">
+    
+      <div class="modalContent col-4" data-backdrop="static" data-keyboard="false">
+      <div class = "row">
+        <div class = "accesEspace d-flex col-12 align-self-start">
+          <div class="bienvenue mb-3">Bienvenue</div>
+          <br>
+        </div>
+      </div>
+        <div class = "row mt-3 ml-1">
+          <div class ="col-1"><!--whitespace--></div>
+          <div class = "d-flex col-12 align-self-start">
+            <div class="texteModal col-12">
+           
+            Félicitations et bienvenues à Frigocommunautaires.com.
+            
+            <br><br>
+            Accédez à l'espace membre et dès aujourd'hui commencez à partager vos excédents de nourriture.
+            </div>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = " accesEspace col-12">
+            <br>
+          </div>
+        </div>
+        <div class ="row topBorderBox justify-content-end mt-3">
+          <button class = "buttonConnecter mr-3" id = "buttonOk" onclick ="closeOk()">Ok</button>
+        </div>      
+      </div>   
+    </div>
+  </div>
+
+
+
+
+
+
+  <body onload ="openPage('Mission','missionButton')">
+    <div class="d-flex justify-content-xl-center newHorizontalNavbar" style="background-color: #008c8c;">
+      <div class ="d-inline-flex navbarName">Frigocommunautaire</div>
+            
+      <div class = "myButton">
+        <button type="button" id="myBtn" class="btn btnLog" onclick="myBtnOnclick()"><i class="fas fa-sign-in-alt"></i></button>
+        <div class = "myButtonName">Membres</div>
+      </div>
+      <!--HORIZONTAL NAVBAR-->
+      <div class ="horizontalNavbar d-none d-xl-flex">
+        
+         
+            <button id="missionButtonHorizontal" class ="navbarButtonHorizontal" onclick= "openPage('Mission', 'missionButtonHorizontal', true)"><li class ="navbarLiItems">Mission</li></button>
+            <button id="statsButtonHorizontal" class ="navbarButtonHorizontal" onclick= "openPage('Stats', 'statsButtonHorizontal', true)"><li class ="navbarLiItems">Stats</li></button>
+            <button id="reglementsButtonHorizontal" class ="navbarButtonHorizontal" onclick= "openPage('Reglement', 'reglementsButtonHorizontal', true)"><li class ="navbarLiItems">Règlement</li></button>
+            <button id="inscriptionButtonHorizontal" class ="navbarButtonHorizontal" onclick= "openPage('Inscription', 'inscriptionButtonHorizontal', true)"><li class ="navbarLiItems">Inscription</li></button>
+          
+       
+     
+  
+      </div>
+      <div class ="horizontalNavbar d-sm-none" style="background-color: #008c8c;">
+    
+          <button id ="missionButtonHorizontalXS" class ="navbarButtonHorizontal" onclick= "openPage('Mission', 'missionButtonHorizontalXS', true)"><li class ="navbarLiItems">Mission</li></button>
+          <button id = "statsButtonHorizontalXS" class ="navbarButtonHorizontal" onclick= "openPage('Stats', 'statsButtonHorizontalXS', true)"><li class ="navbarLiItems">Stats</li></button>
+          <button id ="reglementsButtonHorizontalXS" class ="navbarButtonHorizontal" onclick= "openPage('Reglement', 'reglementsButtonHorizontalXS', true)"><li class ="navbarLiItems">Règlement</li></button>
+          <button id ="inscriptionButtonHorizontalXS" class ="navbarButtonHorizontal" onclick= "openPage('Inscription', 'inscriptionButtonHorizontalXS', true)"><li class ="navbarLiItems">Inscription</li></button>
+      
+     
+   
+
+      </div>
+    </div>
+
+    <!--VERTICAL NAVBAR-->
+    <div class = "d-inline-flex">
+      <div class =" d-none d-xl-none d-sm-inline-flex verticalNavbar" style="background-color: #008c8c;">
+        <div class ="navbarDivItems self-align-center">
+
+            <button id ="missionButton" class ="navbarButton" onclick= "openPage('Mission', 'missionButton', true)"><li class ="navbarLiItems  p-3">Mission</li></button>
+            <button id ="statsButton" class ="navbarButton" onclick= "openPage('Stats', 'statsButton', true)"><li class ="navbarLiItems p-3">Stats</li></button>
+            <button id ="reglementButton" class ="navbarButton" onclick= "openPage('Reglement','reglementButton', true)"><li class ="navbarLiItems   p-3">Règlement</li></button>
+            <button id ="inscriptionButton" class ="navbarButton" onclick ="openPage('Inscription','inscriptionButton', true)"><li class   ="navbarLiItems p-3">Inscription</li></button>
+
+          </div>
+      </div>
+
+
+      <div class="d-flex justify-content-start offset-xl-0 offset-sm-1 mt-xl-4">
+        <div class = "tabStyle tabcontent" id= "Mission">
+          <div class = "extrait mb-3 mt-xl-0" ><i>(Texte extrait du site Web de sauvetabouffe.org/)</i></div>
+
+              <h3 class = "soustitres">Le problème</h3>
+                <div class = "texte"> Notre alimentation est somme toute très énergivore. 
+                Avant d’arriver à notre assiette, nos aliments ont mobilisé énormément de ressources!</div>
+                <ul class ="listeProbleme">
+                  <li class = "liTexte">Le pétrole pour les engrais utilisés en agriculture;</li>
+                  <li class = "liTexte">Le diesel pour la machinerie agricole;</li>
+                  <li class = "liTexte">L’eau pour arroser les cultures;</li>
+                  <li class = "liTexte">Le mazout ou le gaz naturels pour chauffer les bâtiments d’élevage et d’entreposage ainsi que les     serres; </li>
+                  <li class = "liTexte">Le combustible des bateaux, des camions et même des avions pour transporter  les aliments</li>
+                  <li class = "liTexte">Le pétrole pour  les plastiques des emballages.</li>
+                </ul>
+                <div class = "texte">Lorsque la nourriture gaspillée se décompose dans les 
+                  sites d’enfouissement, elle émet du méthane, un gaz 25 fois plus puissant que le gaz carbonique 
+                  en potentiel de réchauffement global.
+                </div>
+              
+            <div class = "notreMission mt-3">
+            <h3 class = "soustitres">Notre mission</h3>
+            <ul class ="listeMission">
+              <li class = "liTexte">Une mobilisation des citoyens des quartiers de Montréal via diverses activités de sensibilisation.</li>
+              <li class = "liTexte">Une communauté active pour la réduction du gaspillage alimentaire.</li>
+            </ul>
+          </div>
+       </div>
+     </div>
+                   
+     <div class = "d-flex justify-content-start mt-4 mt-sm-0 mt-xl-4">
+      <div class = "tabStyle tabcontent" id= "Stats">
+     
+          <div class = "texteStats">Depuis sa création en janvier 2019...</div>
+          <div class ="texteStats"><span class ="frigoNom">Frigocommunataire.com</span> a évité le gaspillage alimentaire de:</div>
+          <ul class = "ulStats">
+            <li class = "liStats">1 430 plats</li>+150 plats en juillet 2020
+          </ul>
+          <div class ="texteStats"><span class ="frigoNom">On</span> a déposé:</div>
+          <ul class = "ulStats">
+            <li class = "liStats">1 678 plats </li><span class ="bravo">BRAVO! </span>+205 plats en juillet 2020
+          </ul>
+          <div class ="texteStats"><span class ="frigoNom">On</span> a fournis à Ville en vert pour le compostage :</div>
+          <ul class = "ulStats">
+            <li class = "liStats">248 plats </li>+15 plats en juillet 2020
+            <li class = "liStatsNoDec">-2 plats comparé à juin 2020</li> 
+          </ul>
+    
+      </div>
+    </div>
+
+    <div class = "d-flex justify-content-start mt-4 mt-sm-0 mt-xl-4">
+      <div class = "tabStyle tabcontent " id= "Reglement">
+          <div class = "texteStats"><span class = "frigoNom">Fonctionnement</span></div>
+          <div class ="texteStats"><span class = "frigoNom">Éligibilité</span></div>
+          <div class = "texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
+          Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div>
+          <div class= "texteStats"><span class ="frigoNom">Opération</span></div>
+          <div class ="frigoNom">Déposer un plat</div>
+          <div class = "texte">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+          Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</div>
+          <div class ="texteStats"><span class ="frigoNom">Prendre en plat - Mon panier</span></div>
+          <div class = "texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
+          Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div>
+          <div class ="texteStats"><span class ="frigoNom">Retour des contenants</span></div>
+          <div class = "texte">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, 
+          nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div>
+       
+      </div>
+    </div>
+
+    <div class = "d-flex justify-content-center mt-xl-2">
+      <div class = "tabStyleInscription tabcontent" id="Inscription">
+        
+    
+          <div class ="texteInscription p-xl-2"><span class="inscriptionSpan">
+            Nom complet</span> (prénom +  nom de famile)
+          </div>
+      
+          
+          <input class = "inputStyle mb-3" type="text" size="55"  id="name" name="texteInscription" required>
+       
+        
+     
+          
+          <div class = "texteInscription p-xl-2"><span class="inscriptionSpan">E-mail</span> (sera votre nom utilisateur)</div>
+          <input class = "inputStyle mb-3" type="text" size="55" id="username" name="texteInscription" required>
+
+          <div class = "texteInscription p-xl-2" id="passwordName"><span class="inscriptionSpan">Mot de passe</span> (mélange de lettres et chiffres)</div>
+          <input id="passwordValue" class = "inputStyle mb-3" type="password" size="55"  name="texteInscription" required>
+        
+
+          <div class = "texteInscription p-xl-2" id="passwordNameConfirmation"><span class="inscriptionSpan">Mot de passe</span> (confirmation)</div>
+          <input id="passwordConfirmation" class = "inputStyle mb-3" type="password" size="55"  name="texteInscription" required>
+
+          <div id="checkSelection" class = "textAccepte"> <label>
+            <input id="checkedElement" type="checkbox" unchecked="unchecked" name="texteInscription">
+            J'ai lu et j'accepte le</label> <a class="reglementStyle mb-3" onclick="openLink()">règlement</a>
+          </div>
+
+          <button class="buttonConfirm mt-2" onclick="checkElements()">Je confirme mon inscription</button>
+      </div>
+    </div>
+  
+
+
+     <!--div vertical navbar-->
+    </div>
+
+  
+    
+  
+
+ 
+
+
+
+
+      
+
+  
+  </body>
+</html>

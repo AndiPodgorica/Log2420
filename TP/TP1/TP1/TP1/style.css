@@ -1,0 +1,393 @@
+.html{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.extrait{
+  font-size: 13px;
+}
+
+.tabStyle{
+  font-size: 18px;
+  max-width: 1500px;
+  margin-left: 200px;
+}
+
+.tabStyleInscription{
+  font-size:15px;
+}
+
+.soustitres{
+  color: #008c8c;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.listeProbleme{
+  line-height: 1.2;
+}
+
+.frigoNom{
+  color: #008c8c;
+  font-weight: bold;
+}
+.texteStats{
+  margin-top: 10px;
+}
+
+.ulStats{
+  margin-top: 15px;
+}
+
+.liStatsNoDec{
+  list-style-type: none;
+}
+
+
+.bravo{
+  color: #F59A23;
+}
+
+.listeMission{
+  margin-top: 10px;
+  line-height: 1.2;
+}
+
+.texteInscription{
+  color: #008c8c;
+  font-size: 16px;
+
+
+}
+
+.inputStyle{
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  color : #8c8c8c;
+  font-size: 13px;
+}
+
+.inputStyle:focus{
+  border: 1px solid black;
+  outline-style: inherit; 
+}
+
+.inscriptionSpan{
+  font-weight: bold;
+}
+  
+.textAccepte{
+  color: #8c8c8c;
+}
+
+
+.buttonConfirm{
+  color: white;
+  font-size: 13px;
+  background-color: #008c8c ;
+  border-radius: 5px;
+  border: 2px solid #008c8c;
+  float: right;
+  margin-right: 0px;
+  
+}
+
+.buttonConfirm:hover{
+  opacity: 80%;
+}
+
+.buttonConfirm:focus{
+  outline: none;
+}
+
+.reglementStyle{
+  color: inherit;
+}
+.reglementStyle:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  color:#8c8c8c;
+}
+
+
+.verticalNavbar{
+  height: 100vh;
+  width: auto;
+  margin-top:0px;
+}
+
+.newHorizontalNavbar{
+  height: 150px;
+  position: sticky;
+  min-width: 365px;
+}
+
+.horizontalNavbar{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right:27%;
+  top: 34%;
+  width: auto;
+}
+
+.navbarName{
+  display: flex;
+  font-size: 35px;
+  color: white;
+  margin-top: 1.5px;
+  margin-left: 0px;
+  height: auto;
+  
+}
+
+
+.navbarButton{
+  background: transparent;
+  border: 0px; 
+  display: block;
+  width: 150px;
+  height: 20vh; 
+}
+
+
+.navbarButton:focus{
+  outline: none;
+  margin-top: 10px;
+}
+
+.navbarButtonHorizontal{
+  background: transparent;
+  border: 0px; 
+  z-index: 1;
+  width: 200px;
+  height: 100px;
+}
+
+.navbarButtonHorizontal:focus{
+  outline: none;
+}
+
+
+.navbarDivItemsHorizontal{
+  z-index: 2;
+  margin-top: 10px;
+}
+
+.navbarLiItems{
+  display: flex;
+  list-style: none;
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.myButton{
+  position: absolute;
+  top: 10.5px;
+  right: 0px;
+  color: white;
+}
+
+.fa-sign-in-alt{
+  font-size: 50px;
+  color: white;
+}
+
+.myButtonName{
+  position: absolute;
+  top: 50px;
+  right: 15px;
+}
+
+.tabStyleInscription{
+ 
+  width: 400px;
+  margin-left: 38vw;
+}
+
+.modal {
+  display: none; 
+  z-index: 1; 
+  padding-top: 100px;
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content */
+.modalContent {
+  background-color:white;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #888;
+  color: #8c8c8c;
+  font-size: 25px;
+  min-width: 400px;
+  border-radius: 10px;
+}
+
+
+
+.buttonAnnuler{
+  color: #008C8C;
+  font-size: 18px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  outline: none;
+
+}
+
+.buttonConnecter{
+  color: white;
+  font-size: 18px;
+  width: 141px;
+  height: 40px;
+  background-color: #008C8C ;
+  border-radius: 5px;
+  border: 1px solid #008c8c;
+}
+
+.buttonAnnuler:focus{
+  outline: none;
+}
+
+.buttonConnecter:focus{
+  outline: none;
+}
+
+
+.buttonAnnuler:hover{
+  opacity: 70%;
+}
+
+.buttonConnecter:hover{
+  opacity: 80%;
+}
+
+.errorMessage{
+  margin-left: 5px;
+  color: #ff4e62;
+}
+
+.accesEspace{
+  font-size: 25px;
+  font-weight: bold;
+  border-bottom: 1px solid #8c8c8c;
+}
+
+.texteModal {
+  line-height: 1.2;
+  
+}
+
+.bienvenue {
+  text-align: right;
+  font-size: 40px;
+}
+
+
+@media (max-width:1199.5px) and (min-width:575.5px){
+
+  .navbarName{
+    font-size: 30px;
+    justify-content: start;
+    margin-top: 30px;
+    margin-left: 23px;
+    
+  }
+
+  .myButton{
+    position: absolute;
+    top: 10.5px;
+    right: 0px;
+    color: white;
+  }
+
+  .newHorizontalNavbar{
+    height: 100px;
+  }
+
+  .tabStyle{
+    margin-top: 20px;
+    margin-left: 0;
+   
+
+  }
+
+  .tabStyleInscription{
+    margin-top: 15px;
+    margin-left: 0px;
+    
+  }
+
+}
+
+@media (max-width:575.5px){
+
+  .navbarName{
+    font-size: 30px;
+    justify-content: start;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+    color: white;
+  }
+
+  .myButton{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color:white;
+
+  }
+  
+  .newHorizontalNavbar{
+    position: sticky;
+    height: 100px;
+    width: 576px;
+  }
+
+  .horizontalNavbar{
+    margin-top: 17px;
+    width: 100%;
+    right: 0;
+
+  }
+
+  .navbarButtonHorizontal{
+    background: transparent;
+    border: 0px; 
+    z-index: 1;
+    height: 100px !important;
+    width: 25%;
+    flex-direction: row;
+    height: 50px;
+  }
+
+  .myButtonName{
+    font-size: 15px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .tabStyle{
+    padding: 15px;
+    margin-top: 10px;
+    margin-left: 0;
+  
+  }
+
+  .tabStyleInscription{
+    padding: 15px;
+    margin-top: 50px;
+    margin-left: 77px;
+  }
+
+
+}

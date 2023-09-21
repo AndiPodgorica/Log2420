@@ -1,0 +1,43 @@
+html{
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .grid-container{
+    display: flex;
+    padding: 0px;
+  }
+  
+  .grid-container > table{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .div_Nom_Et_Abreviation{
+    width: auto;
+    margin: 0px;
+  }
+  
+  .p_abreviation{
+    width: auto;
+    margin: 0px;
+  }
+  
+  .p_nom{
+    width: auto;
+    margin: 0px;
+  }
+  
+  #tablePartisProvinciaux{
+    width: 50%;
+    margin: 0px !important;
+  }
+  
+  #tablePartisFederaux{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0px !important;
+  }
+  

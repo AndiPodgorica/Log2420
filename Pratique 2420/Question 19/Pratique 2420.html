@@ -1,0 +1,36 @@
+	<!doctype html>
+	<html class="no-js" lang="fr">
+	<script>
+	function ftitre() {
+	// jQuery
+    var titre = $('input1').val();
+	document.getElementsByTagName('h1')[0].innerHTML = titre;
+	}
+	</script>
+	<title>Page HTML</title>
+	<head>
+	<meta charset="utf-8">
+	</head>
+	<body id="div1">
+	<div id="section1">
+	<h1>Titre dynamique</h1>
+	<p id="p1">Paragraphe 1. Spécifiez le titre désiré à cette section en le saisissant
+	dans la boîte de saisie ci-dessous et en appuyant sur le bouton "Changer le titre"</p>
+	<div>
+	<input id="input1" type="text" />
+	<button id="b1" onclick="ftitre()">OK</button>
+	</div>
+	<p id="p2"> 
+	Paragraphe 2. Ce paragraphe doit disparaître par un clic de souris et faire
+	apparaître le paragraphe 3.
+	</p>
+	<p id="p3"> 
+	Paragraphe 3. Ce paragraphe doit disparaître par un clic de souris et faire
+	apparaître le paragraphe 2.
+	<span style="font-style:italic"> Au chargement initial de la page, le paragraphe 3 ne
+	doit pas être affiché et, de plus, cette phrase ne doit apparaître qu’une seule fois.
+	</span>
+	</p>
+	</div>
+	</body>
+	</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML//EN">
+<!-- saved from url=(0067)http://cours.polymtl.ca/MDesmarais/log2420/Eval/quiz-conception.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="STYLESHEET" href="./Quiz 4_files/global.css" type="text/css">
+
+
+
+    <link rel="STYLESHEET" href="./Quiz 4_files/global.css" type="text/css">
+    <link rel="shortcut icon" href="http://www.polymtl.ca/profiles/portail/themes/custom/bueno/favicon.ico" type="image/vnd.microsoft.icon">
+    <title>LOG2420 - Quiz Conception</title>
+</head>
+<body bgcolor="WHITE">
+  <table border="0" width="100%">
+    <tbody><tr><td colspan="3">
+	<table height="75px" style="background-repeat:repeat;background-image:url(&#39;../background2.jpg&#39;);">
+	  <tbody><tr><td><a href="http://www.polymtl.ca/"><img alt="LOG2420" ismap="" border="0" src="./Quiz 4_files/logo03.gif"></a></td>
+            <td>&nbsp;</td>
+	    <td width="100%"><font size="+2" style="color:midnightblue;
+						     font-family:Verdana,Arial,sans-serif;"> LOG2420,  Analyse et conception
+		d'interfaces utilisateur</font><br><font size="+1" color="midnightblue">Hiver 2020</font></td>
+	    <td align="right" valign="center" style="background-color:#cecab6"></td></tr></tbody></table>
+    </td></tr>
+
+    <tr><td colspan="3"><img height="3" width="100%" border="0" src="./Quiz 4_files/border.png">
+
+	</td></tr><tr valign="top"><td style="padding-top:18pt;" padding="0">
+	</td></tr>
+  </tbody></table>
+  <div class="content" id="content">
+    <h1 id="titre1" style="margin-top:0em;">Quiz Conception</h1><style>
+ol ol { list-style: lower-alpha outside }
+li {margin-top:1ex;}
+.chg {
+      color: maroon;
+}
+.tdbrd2 {
+      border:solid windowtext .5pt; padding:0cm 5.4pt 0cm 5.4pt; border-left:none; border-top:none;
+}
+</style>
+
+
+<ol>
+
+<li>Identifiez, décrivez et justifiez comment et pourquoi vous appliqueriez
+les trois méthodes énoncées ci-dessous pour un projet
+de conception interface pour l'enregistrement d'émissions télé sur ordinateur pour bien préciser les
+exigences des utilisateurs&nbsp;:
+    <ul>
+    <li>Analyse de la tâche
+    </li><li>Groupe de discussion
+    </li><li>Sondage
+    </li></ul>
+
+<!--    <p class=chg>
+    Analyse de la tâche&nbsp;: 
+	<ul class=chg>
+	<li> Nécessaire dans la plupart des projets, y compris celui-ci
+	<li> Préciser ce qui peut être fait par l'appareil et ce qui doit être fait par l'utilisateur
+	<li> Servira notamment à concevoir les cas d'utilisation, les spécifications plus détaillées, les scénarios de tests
+	<li> Pourrait être basé sur des observations d'utilisateurs avec des appareils connexes (télé, magnétoscope traditionnel, location de fimls DVD), des entrevues, des applications similaires de la concurrence.
+	<li> Servira à la conception de maquettes.
+	</ul> 
+    <p class=chg>
+    Groupe de discussion
+	<ul class=chg>
+	<li> Permet d'évoquer des idées/concepts, des besoins, des principes de conception, d'identifier les bons interlocuteurs
+	<li> À utiliser tôt dans le processus d'élaboration des exigences
+	<li> Moins indispensable que l'analyse de tâche, par ex.
+	</ul>
+    <p class=chg>
+    Sondage
+	<ul class=chg>
+	<li> Permet de recueillir des données quantitatives que l'on ne peut obtenir autrement qu'en s'adressant à un bon nombre de répondants
+	<li> Par ex., quel serait le profil des acheteurs potentiels (homme/femme, âge, fréquence utilisation d'ordinateur), les caractéristiques de leurs appareils et leur location (au foyer, portable, etc.), fréquence de location de DVD, le prix acceptable pour eux, etc..
+	</ul>
+-->
+</li><li>Votre association d'étudiants vous mandate pour refaire
+l'interface de leur site.&nbsp;   On pense, par exemple, à améliorer le service
+de vente et d'achats de livres usagés.&nbsp;   Quelles activités leur
+proposeriez-vous pour les aider à redéfinir les services du site et
+l'interface.&nbsp;  Justifiez votre réponse.&nbsp;
+
+<!--<p class=chg>Plusieurs réponses sont valables dont voici une liste non exhaustive
+<ul class=chg>
+<li>Interview des utilisateurs actuels et potentiels
+<li>Sondage auprès de la clientèle potentielle
+<li>Étude de l'utilisation par observation et/ou par les statistiques de fréquentation
+<li>Comparaison avec d'autre sites
+</ul>
+-->
+</li><li>Luc et Jeanne ne s'accordent pas quant à l'avantage de fournir un
+"défaire" (<i>undo</i>) généralisé pour leur application de calendrier
+électronique.&nbsp;   Cette fonction serait très lourde à supporter pour
+toutes les actions possible.&nbsp;   Luc affirme que, comme le principal
+avantage est de permettre de préserver le travail de l'utilisateur, il
+serait préférable de ne l'offrir que pour quelques fonctions critiques
+seulement.&nbsp;   Jeanne affirme au contraire que si on doit l'offrir, il
+faut l'offrir partout pour être consistant, ou ne pas l'offrir et simplement avoir des
+confirmation pour les actions critiques.&nbsp;  Si c'est trop coûteux, elle propose de
+demander une confirmation pour chaque action critique.&nbsp;   Discutez du point de vue de
+chacun et de ce que vous proposeriez.&nbsp;
+
+<!--<p class=chg>Luc a raison d'affirmer que c'est une façon de préserver le travail de l'utilisateur
+en limitant l'impact des erreurs critiques avec le undo (ce n'est toutefois pas la seule façon).  Jeanne a aussi raison
+d'affirmer que l'application partielle du <i>défaire</i> entraîne des problèmes d'inconsistance qui peuvent
+être frustrantes pour l'utilisateur, ne sachant pas d'emblée ce qui est défaisable de ce qui ne l'est pas.
+Par contre l'option d'avoir des confirmations pour chaque action critique peut s'avérer très lourde et inefficace.
+Le <i>défaire</i> est aussi important pour un point qu'ils ne relèvent pas, celui de favoriser l'exploration et, par ricochet,
+l'apprentissage de l'application.  Il faut donc évaluer les gains qu'on peut tirer de chaque option et qui dépendent
+du nombre d'utilisateurs, de l'effort requis, des avantages pour l'apprentissage, des inconvénients comme
+le nombre de fois qu'une confirmation serait requise, etc.
+-->
+</li><li> Lors de la conception d'une interface usager, est-il préférable
+d'utiliser un contraste de couleurs ou un contraste d'intensité?  Pourquoi?
+
+<!--<p class=chg>Un contraste d'intensité car l'oeuil est plus sensible à
+l'intensité qu'au couleurs&nbsp;: les bâtonnets comptent pour 95% des
+cellules de la rétine et détectent le contraste lumineux, tandis que
+le reste sont des cônes qui différencient les couleurs)
+-->
+</li><li>
+Expliquez le principe de l'autonomie
+
+<!--<p class=chg>Ce principe est bien décrit dans le texte des <a href="http://www.asktog.com/basics/firstPrinciples.html#autonomy">Principes</a> de Tognazzini
+-->
+</li><li>
+Décrivez et expliquez les information que l'on cherche à colliger à travers l'inspection
+cognitive, ainsi que les questions spécifiques à poser.
+
+<!--<p class=chg>On cherche à obtenir les informations suivantes&nbsp;:
+    <ul class=chg>
+    <li> Le détail de chaque étape <b>d'une tâche donnée</b>
+    <li> Les connaissances et informations nécessaires pour compléter chaque étape
+    <li> La charge cognitive impliquée
+    <li> Les erreurs potentielles
+    </ul>
+<p class=chg>Quatre questions spécifiques facilitent la collecte de l'information pertinente&nbsp;:
+    <ul class=chg>
+    <li> La propention de l'utilisateur à effecteur la bonne action?
+    <li> L'utilisateur s'attend au résultat?
+    <li> Le résultat est celui qu'il escomptait?
+    <li> L'utilisateur comprend le résultat affiché?
+    </ul>
+<p class=chg>L'inspection cognitive doit porter sur des tâches spécifiques et permettre d'identifier
+les problèmes potentiels selon un profil d'utilisateur donné.
+-->
+</li><li>Les fenêtres ici-bas sont tirées de l'application MapEdit.
+
+    <ol>
+      <li> Identifiez un élément de charge cognitive pour chaque fenêtre</li>
+    <li> Laquelle des deux fenêtres de Mapedit suivantes comporte la charge cognitive la plus
+      importante ?</li>
+    <li> Proposez deux éléments pour améliorer l'ergonomie d'une ou des deux fenêtres.</li>
+    </ol>
+</li>
+
+<p><img src="./Quiz 4_files/fig2.png">&nbsp;&nbsp;&nbsp;<img src="./Quiz 4_files/fig3.png">
+
+</p><li>Nous avons vu à la première séance de cours un appareil qui affichait de grave problèmes
+de conception d'interface, le baladeur de Sanyo dont l'interface est reproduite
+schématiquement ci-dessous.
+
+<ol>
+  <li>Expliquez quels sont les principaux principes ergonomiques de conception qui font défaut à cette interface</li>
+  <li>Expliquez, selon vous, les principaux principes de développement centré-utilisateur qui ont vraisemblablement fait défaut pour la conception de l'interface</li>
+</ol>
+</li>
+
+<p><img src="./Quiz 4_files/sanyo.png">
+
+  </p><li> Voici quelques règles de Smith et Mosier.  Pour chacune, faites le lien avec des heuristiques de Bastien et Scapin.
+
+    <ol>
+      <li> 1.0/26 Minimal Shift Keying
+      <p>Design data entry transactions to minimize the need for shift
+	keying.  </p>
+      <p>Comment: Shift keying can be considered a form of double keying, which imposes a
+	demand for extra user attention.  Keyboard designers should put frequently used characters
+	where they can be easily keyed.  Conversely, software designers should avoid frequent use of
+	characters requiring shift keying.</p>
+      </li>
+
+      <li> 1.1/1 Distinctive Cursor
+	<p> For position designation on an electronic display, provide a movable cursor with
+	  distinctive visual features (shape, blink, etc.).  Exception: When position designation
+	  involves only selection among displayed alternatives, highlighting selected items might be
+	  used instead of a separately displayed cursor.  </p>
+	<p>Comment: When choosing a cursor shape, consider the general content of the
+	  display.  For instance, an underscore cursor would be difficult to see on a display of
+	  underscored text, or on a graphical display containing many other lines.  </p>
+	<p>Comment: If the cursor is changed to denote different functions (e.g., to signal
+	  deletion rather than entry), then each different cursor should be distinguishable from the
+	  others.  Comment: If multiple cursors are used on the same display (e.g., one for
+	  alphanumeric entry and one for line drawing), then each cursor should be distinguishable
+	  from the others</p>
+      </li>
+
+      
+      <li>1.3/24 Storing Frequently Used Text 
+	<p>Allow users to label and store frequently used
+	  text segments, and later to recall (copy into current text) stored segments identified by
+	  their assigned labels.  </p>
+	<p>Example: Much text processing involves repetitive elements specific
+	  to different applications, such as signature blocks, technical terms, long names, formulas
+	  or equations.</p>
+      </li>
+      <li>1.6/4 Confirming Cursor Position 
+	<p>For most graphics data entry, pointing should be
+a dual action, first positioning a cursor at a desired position, and then confirming that
+	  position to the computer.</p>
+	<p>Exception: An exception to this recommendation would be the freehand drawing of
+continuous lines ("path specification"), where a computer must store and display a series of
+cursor positions as they are input by the user; when the user initiates such a line-drawing
+sequence, a new data point might be recorded automatically whenever the cursor has been
+moved a certain distance (e.g., 1 mm) or when a certain time has elapsed (e.g., 0.5 s).
+Comment: During graphics data entry, a cursor will almost always be somewhere on the
+display, but not necessarily at a location intended by the user.  In effect, a user needs
+some way to move the cursor around and some separate action to signal the computer when its
+position should be recorded.  Comment: An interesting case of position confirmation is
+"rubberbanding", which is a technique to aid line drawing.  With rubberbanding, a user can
+designate the starting point for a line, then move the cursor to various possible end points
+while the computer continuously shows the line that would result if that end point were
+	  confirmed by the user.</p>
+      </li>
+      <li>1.6/12 Displaying Current Attributes
+	<p>During graphic data entry/editing, display the selected attributes that will
+affect current actions for ready reference by the user.
+	</p><p>Example: When graphic attributes -- plotting symbols, character size, line
+type, color, etc.  -- are chosen from displayed menus, it might suffice to highlight the
+currently selected menu options; alternatively, current selections might be shown in some
+sort of "reminder" window.  </p>
+<p>Example: A few attributes might be shown by the displayed cursor, i.e., by changing
+  cursor shape, size or color depending upon current attribute selections.  </p>
+<p>Example: If rubberbanding is provided to aid line drawing, then that process itself would
+show the currently selected line type.  Comment: Users may forget what options have been
+chosen.  Displayed reminders will be particularly important in situations where the
+consequences of a mistaken user action are difficult to reverse, e.g., where it may be hard
+to erase a wrongly drawn line.  Comment: In some applications, display cues may not be
+adequate to convey attribute information completely.  There may not be sufficient room on
+the display.  Or the attributes may derive from underlying models whose characteristics are
+too complex for simple display representation.  In such cases, users should be able to
+request auxiliary display of such information to determine the operative context for current
+actions.</p>
+      </li>
+    </ol>
+  
+</li></ol>
+
+<p>
+
+
+<script type="text/javascript" async="" src="./Quiz 4_files/ga.js.download"></script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5450183-6']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</p></div></body></html>

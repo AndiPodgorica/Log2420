@@ -1,0 +1,26 @@
+p{
+    color:blue;
+    background-color: rgb(211,211,211);
+    font-style: bold;
+}
+
+#p1{
+   font-style: italic;
+   color: red;
+}
+
+#p2{
+    color: red;
+ }
+
+ #p4{
+    color: black;
+    font-style: normal;
+ }
+
+ #p6{
+    color: black;
+    font-style: normal;
+ }
+
+

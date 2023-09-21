@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Composants Web</title>
+    <script src="cc-liste-vehicules.js"></script>
+    <script src="cc-liste-motos.js"></script>
+    <script src="cc-liste-voitures.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h1>Voitures électriques</h1>
+            <h2>En vedette</h2>
+            <cc-liste-voitures affiche_marque="true" affiche_modele="true" affiche_annee="true" affiche_photo="true" couleur="#9933cc"></cc-liste-voitures>
+        </div>
+        <div class="grid-item">
+            <h1>Motos électriques</h1>
+            <h2>En vedette</h2>
+            <cc-liste-motos affiche_marque="true" affiche_modele="true" affiche_annee="true" affiche_photo="true" couleur="#33b5e5" ></cc-liste-motos>
+        </div>
+
+    </div>
+</body>
+
+</html
